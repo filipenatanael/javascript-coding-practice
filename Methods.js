@@ -1,3 +1,4 @@
+// ---- MANIPULAÇÃO DE ARRAY ----
 var arrayDados = ["Item 1","Item 2","Item 3","Item 4","Item 5",20]
 
 arrayDados[1]
@@ -16,3 +17,5 @@ arrayDados.shift()
 
 arrayDados.push("Item 10")
 //5 - Adiciona um novo Item ao array
+
+//----------------------------------
