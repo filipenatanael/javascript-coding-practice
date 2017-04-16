@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Testing JavaScript</title>
+  <script type="text/javascript">
+  function ChangeBook(object) {
+    alert("Selected: "+object.value);
+  }
+
+  function isfocus() {
+    console.log("Field is focus");
+  }
+
+  function isBlur() {
+    console.log("Field is not focus");
+  }
+
+  </script>
+</head>
+
+<form method="post" onsubmit="return false">
+<input type="text" name="nome" onfocus="isfocus()" onblur="isBlur()"></br>
+
+  <select name="books" onchange="ChangeBook(this)">
+    <option>Marvel</option>
+    <option>DC Comic</option>
+    <option>Vertigo</option>
+  </select>
+
+<input type="submit" value="SEED">
+</form>
+
+
+</body>
+</html>
