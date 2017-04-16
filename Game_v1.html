@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Testing JavaScript</title>
+  <style type="text/css">
+  .boll {
+    width: 50px;
+    height: 50px;
+    background-color: #001a00;
+    border-radius: 25px;
+    position: absolute;
+  }
+
+  </style>
+
+  <script type="text/javascript">
+  var pontos = 0;
+
+  function addBoll(){
+    var boll = document.createElement("div");
+    boll.setAttribute("class","boll");
+    var x = Math.floor(Math.random() * 500);
+    var y = Math.floor(Math.random() * 400);
+    boll.setAttribute("style","left:"+x+"px;top:"+y+"px;");
+    boll.setAttribute("onclick", "FireBoll(this)");
+
+    document.body.appendChild(boll);
+  }
+
+  function FireBoll(element) {
+    document.body.removeChild(element);
+    pontos  =+ 1;
+    document.getElementById('DisplayPontos').value = parseInt(document.getElementById('DisplayPontos').value) + pontos;
+  }
+
+  function StartGame() {
+    document.getElementById('DisplayPontos').value = 0;
+    setInterval(addBoll, 1000);
+  }
+
+
+  </script>
+</head>
+<body>
+
+  <button type="button" onclick="StartGame()">Start Super Boll</button>
+  Pontos: <input type="text" id="DisplayPontos">
+
+
+</body>
+</html>
