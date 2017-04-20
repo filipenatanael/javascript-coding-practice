@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Testing JavaScript</title>
-  <script type="text/javascript">
-
-  function People(){
+function People(){
     this.name;
     this.age;
 
@@ -23,9 +16,3 @@
   var person = new People();
   person.sayHello();
   person.setName("Carlos");
-
-  </script>
-</head>
-<body>
-</body>
-</html>
