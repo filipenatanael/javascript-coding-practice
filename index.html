@@ -5,15 +5,17 @@
   <title>Testing JavaScript</title>
   <script type="text/javascript">
 
-  function people(){
+  function People(){
     this.name;
     this.age;
-    this.fone;
+
+    this.sayHello = function(){
+      alert("Hello!");
+    }
   }
 
-  var p1 = new people();
-  p1.name = "This is my name!"
-  alert(p1.name);
+  var person = new People();
+  person.sayHello();
 
   </script>
 </head>
