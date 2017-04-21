@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Testing JavaScript</title>
-  <script type="text/javascript">
-
-    function action(){
+function action(){
       document.write("Running...</br>");
     }
 
@@ -17,9 +10,3 @@
 
     //--- Stop setInterval ---
     //clearInterval(timer);
-
-  </script>
-</head>
-<body>
-</body>
-</html>
