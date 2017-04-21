@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Testing JavaScript</title>
-    <script type="text/javascript">
-
-    function KeyDown(event) {
+function KeyDown(event) {
       console.log("Press: "+event.keyCode);
     }
 
@@ -24,15 +17,9 @@
 
     }
 
-
-
-    </script>
-  </head>
-  <body>
-  <h3>Keyboard Exemple 1</h3>
+/*
   </br>
   <input type="text" onKeyDown="KeyDown(event)" onKeyUp="KeyUp(event)" onKeyPress="KeyPress(event)">
   </br></br>
   <input type="text" onKeyUp="Command(event)">
-  </body>
-</html>
+*/
