@@ -1,7 +1,6 @@
 function action(){
       document.write("Running...</br>");
     }
-
     //setInterval(action, 2000);
 
     //setTimeout(action, 2000);
