@@ -1,54 +1,34 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Testing JavaScript</title>
-    <script type="text/javascript">
-
-    function Down(){
+function Down(){
       console.log("DOWN");
     }
-
-    function Up(){
+function Up(){
       console.log("UP");
     }
-
-    function Over(){
+function Over(){
       console.log("OVER ELEMENT");
     }
-
-    function Out(){
+function Out(){
       console.log("OUT ELEMENT");
     }
-
-    function Move(){
+function Move(){
       console.log("MOUSE IS MOVINIG");
     }
-
-    function Click() {
+function Click() {
       console.log("CLICKED");
     }
-
-    function ContextMenu() {
+function ContextMenu() {
       console.log("CLICKED ON RIGHT BUTTON");
       return false
     }
-
-    function DblClick() {
+function DblClick() {
       console.log("DOUBLE CLICK");
     }
 
-    </script>
-  </head>
-  <body>
-  <h3>Mouse</h3>
+/*
   </br></br>
   <button type="button" onMouseDown="Down()" onMouseUp="Up()" onMouseOver="Over()" onMouseOut="Out()">Exemple 1</button>
   </br></br>
   <button type="button" onMouseMove="Move()" onClick="Click()">Exemple 2</button>
   </br></br>
   <button type="button" onContextMenu="return ContextMenu()" onDblClick="DblClick()">Exemple 3</button>
-
-
-  </body>
-</html>
+*/
