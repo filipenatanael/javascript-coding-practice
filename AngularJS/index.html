@@ -15,12 +15,20 @@
     </div>
     -->
 
+    <!-- NAME AND LAST NAME
     <div ng-app="">
       Fisrt name:
       <input type="text" ng-model="first_name">
       Last name:
       <input type="text" ng-model="last_name">
       {{first_name+" "+last_name}}
+    </div>
+    -->
+
+    <div ng-app="" ng-init="const_first=10">
+      Second Value:
+      <input type="text" ng-model="second_value">
+      <p>(const_first * second_value) = {{const_first * second_value}}</p>
     </div>
 
 
