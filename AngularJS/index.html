@@ -34,13 +34,21 @@ Second Value:
 -->
 
 
-    <div ng-app="myApp">
+    <div ng-app="myApp" ng-controller="myCTRL">
+    <input type="text" ng-model="first_name">
+    <input type="text" ng-model="last_name">
 
+    {{first_name+" "+last_name}}
 
+    <span ng-model="info"></span>
     </div>
 
     <script type="text/javascript">
     var app = angular.module("myApp",[]);
+    app.controller("myCTRL", function($scope){
+       $scope.first_name = "Testing!!!";
+    
+    });
 
     </script>
 </body>
