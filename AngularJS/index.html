@@ -8,47 +8,22 @@
 </head>
 <body>
 
-  <!-- CHANGE COLOR
-  <div ng-app="" style="background-color:{{cor}}">
-  The background color is:
-  <input type="text" ng-model="cor">
-</div>
--->
-
-<!-- NAME AND LAST NAME
-<div ng-app="">
-Fisrt name:
-<input type="text" ng-model="first_name">
-Last name:
-<input type="text" ng-model="last_name">
-{{first_name+" "+last_name}}
-</div>
--->
-
-<!-- WORK WITH NG-INIT
-<div ng-app="" ng-init="const_first=10">
-Second Value:
-<input type="text" ng-model="second_value">
-<p>(const_first * second_value) = {{const_first * second_value}}</p>
-</div>
--->
-
-
-<div ng-app="myApp" ng-controller="myCTRL">
+  <div ng-app="myApp" ng-controller="myCTRL">
+    <ul>
+      <li ng-repeat="ingredient in ingredients">
+        {{ ingredient }}
+      </li>
+    </ul>
+  <!----------------------------------------------------------------->
+  </br>
   <ul>
-    <li ng-repeat="ingredient in ingredients">
-      {{ ingredient }}
+    <li ng-repeat="player in players">
+      {{player.nome}} is {{player.character}}
     </li>
   </ul>
 
-</br>
-
-<ul>
-  <li >
-  </li>
-</ul>
-
 </div>
+
 
 <script type="text/javascript">
 var app = angular.module("myApp",[]);
@@ -58,7 +33,7 @@ app.controller("myCTRL", function($scope){
   $scope.players = [
     {'name':'Bruce Wayne', 'character':'Batman'},
     {'name':'Clark Kent/Kal-El', 'character':'Superman'},
-    {'name':'Wonder Woman', 'Diana Prince'}
+    {'name':'Wonder Woman', 'character':'Diana Prince'}
   ];
 
 });
