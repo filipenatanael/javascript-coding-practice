@@ -34,22 +34,35 @@ Second Value:
 -->
 
 
-    <div ng-app="myApp" ng-controller="myCTRL">
-    <input type="text" ng-model="first_name">
-    <input type="text" ng-model="last_name">
+<div ng-app="myApp" ng-controller="myCTRL">
+  <ul>
+    <li ng-repeat="ingredient in ingredients">
+      {{ ingredient }}
+    </li>
+  </ul>
 
-    {{first_name+" "+last_name}}
+</br>
 
-    <span ng-model="info"></span>
-    </div>
+<ul>
+  <li >
+  </li>
+</ul>
 
-    <script type="text/javascript">
-    var app = angular.module("myApp",[]);
-    app.controller("myCTRL", function($scope){
-       $scope.first_name = "Testing!!!";
-    
-    });
+</div>
 
-    </script>
+<script type="text/javascript">
+var app = angular.module("myApp",[]);
+app.controller("myCTRL", function($scope){
+  $scope.ingredients = ["Flour","Eggs","Chocolate"];
+
+  $scope.players = [
+    {'name':'Bruce Wayne', 'character':'Batman'},
+    {'name':'Clark Kent/Kal-El', 'character':'Superman'},
+    {'name':'Wonder Woman', 'Diana Prince'}
+  ];
+
+});
+
+</script>
 </body>
 </html>
