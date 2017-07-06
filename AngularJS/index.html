@@ -3,22 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Learning AngularJS</title>
-
   <script type="text/javascript" src="angular.min.js"></script>
 </head>
 <body>
 
   <div ng-app="myApp" ng-controller="myCTRL">
-
     <input type="text" ng-model="FilterFor"/>
-
     <ul>
       <li ng-repeat="name in names | filter:FilterFor">
         <!-- {{player.name | uppercase}} is {{player.character | lowercase}} -->
         {{name}}
       </li>
     </ul>
-
   </div>
 
 
