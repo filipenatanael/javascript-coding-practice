@@ -9,9 +9,13 @@
 <body>
 
   <div ng-app="myApp" ng-controller="myCTRL">
+
+    <input type="text" ng-model="FilterFor"/>
+
     <ul>
-      <li ng-repeat="player in players">
-        {{player.name | uppercase}} is {{player.character | lowercase}}
+      <li ng-repeat="name in names | filter:FilterFor">
+        <!-- {{player.name | uppercase}} is {{player.character | lowercase}} -->
+        {{name}}
       </li>
     </ul>
 
@@ -21,12 +25,8 @@
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope){
-
-    $scope.players = [
-      {'name':'Bruce Wayne', 'character':'Batman'},
-      {'name':'Clark Kent/Kal-El', 'character':'Superman'},
-      {'name':'Wonder Woman', 'character':'Diana Prince'}
-    ];
+    $scope.FilterFor = "Bruce";
+    $scope.names = ["Bruce Wayne", "Clark Kent", "Wonder Woman"];
 
   });
 
