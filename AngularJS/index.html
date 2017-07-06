@@ -10,9 +10,7 @@
   <div ng-app="myApp" ng-controller="myCTRL">
     <h1>List People</h1>
 
-    <select ng-model="orderinigFor">
-      <option value="name">Name</option>
-      <option value="country">Country</option>
+    <select ng-model="orderinigFor" ng-options="x for x in options_array">
     </select>
 
     <table border="0" width="500">
