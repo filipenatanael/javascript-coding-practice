@@ -8,21 +8,36 @@
 <body>
 
   <div ng-app="myApp" ng-controller="myCTRL">
-    <input type="text" ng-model="FilterFor"/>
-    <ul>
-      <li ng-repeat="name in names | filter:FilterFor">
-        <!-- {{player.name | uppercase}} is {{player.character | lowercase}} -->
-        {{name}}
-      </li>
-    </ul>
+    <h1>List People</h1>
+
+     <select ng-model="orderinigFor">
+          <option value="name">Name</option>
+          <option value="country">Country</option>
+     </select>
+
+     <table border="0" width="500">
+       <tr>
+         <th align="left">Name</th>
+         <th align="left">Country</th>
+       </tr>
+       <tr ng-repeat="person in people | orderBy:orderinigFor">
+         <td>{{person.name}}</td>
+         <td>{{person.country}}</td>
+       </tr>
+     </table>
+
   </div>
 
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope){
-    $scope.FilterFor = "Bruce";
-    $scope.names = ["Bruce Wayne", "Clark Kent", "Wonder Woman"];
+  //$scope.orderinigFor = "country";
+    $scope.people = [
+      {'name':'Clark Kent', 'country':'Canada'},
+      {'name':'Bruce Wayne', 'country':'Brazil'},
+      {'name':'AWonder Woman', 'country':'Japan'}
+    ];
 
   });
 
