@@ -5,65 +5,20 @@
   <title>Learning AngularJS</title>
   <script type="text/javascript" src="angular.min.js"></script>
 </head>
-<body>
+<body ng-app="myApp" ng-controller="myCTRL">
 
-  <div ng-app="myApp" ng-controller="myCTRL">
-    <h1>List People</h1>
 
-    <select ng-model="orderinigFor" ng-options="x.name for x in options_array">
-    </select>
+  <div></div>
 
-    <table border="0" width="500">
-      <tr>
-        <th align="left" ng-repeat="opt in options_array">{{opt.name | uppercase}}</th>
-      </tr>
-      <tr ng-repeat="person in people | orderBy:orderinigFor.v_value">
-        <td>{{person.name}}</td>
-        <td>{{person.country}}</td>
-      </tr>
-    </table>
-
-  </div>
 
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
-  app.controller("myCTRL", function($scope){
-    $scope.options_array = [{name:'Name of person', v_value:'name'},
-    {name:'Country from', v_value:'country'}];
+  app.controller("myCTRL", function($scope, $http){
 
-    $scope.people = [
-      {'name':'Clark Kent', 'country':'Canada'},
-      {'name':'Bruce Wayne', 'country':'Brazil'},
-      {'name':'AWonder Woman', 'country':'Japan'}
-    ];
+
 
   });
-
   </script>
-
-
-  <!-- {{player.name | uppercase}} is {{player.character | lowercase}}
-  <!-
-  <div ng-app="myApp" ng-controller="myCTRL">
-  <input type="text" ng-model="FilterFor"/>
-  <ul>
-  <li ng-repeat="name in names | filter:FilterFor">
-
-  {{name}}
-</li>
-</ul>
-</div>
-
-<script type="text/javascript">
-var app = angular.module("myApp",[]);
-app.controller("myCTRL", function($scope){
-$scope.FilterFor = "Bruce";
-$scope.names = ["Bruce Wayne", "Clark Kent", "Wonder Woman"];
-
-});
--->
-
-</script>
 </body>
 </html>
