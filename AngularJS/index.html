@@ -8,18 +8,12 @@
 <body ng-app="myApp" ng-controller="myCTRL">
 
 
-  <div>{{html}}</div>
-
-
-
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope, $http){
-     $scope.html = "Nothing to show!";
 
-     $http.get('Page_1.html').then(function(response){
-       $scope.html = response.data;
-     });
+
+
 
   });
   </script>
