@@ -7,13 +7,15 @@
 </head>
 <body ng-app="myApp" ng-controller="myCTRL">
 
+  <button type="button" ng-click="count = count +1">+1</button>
+
+  <p>{{ count }}</p>
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope, $http){
 
-
-
+    $scope.count = 0;
 
   });
   </script>
