@@ -7,11 +7,20 @@
 </head>
 <body ng-app="myApp" ng-controller="myCTRL">
 
+  <form name="myForm">
+    <input type="email" name="email" ng-model="input_Email" required/>
+    <input type="submit" value="Seed">
+
+    <p>{{ myForm.email.$valid }}</p>
+
+    <p ng-show="myForm.email.$dirty && myForm.email.$invalid"><b>This email is invalid!!!</b></p>
+  </form>
+
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope, $http){
-
+    //myForm.email.$touched
 
   });
   </script>
