@@ -7,57 +7,25 @@
 </head>
 <body ng-app="myApp" ng-controller="myCTRL">
 
-  <button type="button" ng-click="addCount()">+1</button>
-  <p>{{ count }}</p>
+  <form name="myForm">
+    <input type="email" name="email" ng-model="input_Email" required/>
+    <input type="submit" value="Seed">
+
+    <p>{{ myForm.email.$valid }}</p>
 
 
-  <button type="button" ng-click="showDIV()">SHOW DIV</button>
-  <button type="button" ng-click="hideDIV()">HIDE DIV</button>
-</br></br>
-<button type="button" ng-click="actionDIV()">{{text_button}}</button>
-
-<div ng-show="testingDIV">
-  <h1>Menu:</h1>
-  <div>Item 1</div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-</div>
-
-<script type="text/javascript">
-var app = angular.module("myApp",[]);
-app.controller("myCTRL", function($scope, $http){
-
-  $scope.count = 0;
-  $scope.addCount = function(){
-    $scope.count = $scope.count + 1;
-  }
-  //------------------------------------
-  $scope.testingDIV = false;
-  //------------------------------------
-  $scope.showDIV = function(){
-    $scope.testingDIV = true;
-  }
-  //------------------------------------
-  $scope.hideDIV = function(){
-    $scope.testingDIV = false;
-  }
-  //------------------------------------
-
-  $scope.text_button = "SHOW";
-
-  $scope.actionDIV = function(){
-    if($scope.testingDIV == false){
-      $scope.testingDIV = true;
-      $scope.text_button = "DONT SHOW!";
-    }else{
-      $scope.testingDIV = false;
-      $scope.text_button = "SHOW!";
-    }
-
-  }
+    <p ng-show="myForm.email.$dirty && myForm.email.$invalid"><b>This email is invalid!!!</b></p>
+  </form>
 
 
-});
-</script>
+
+
+  <script type="text/javascript">
+  var app = angular.module("myApp",[]);
+  app.controller("myCTRL", function($scope, $http){
+    //myForm.email.$touched
+
+  });
+  </script>
 </body>
 </html>
