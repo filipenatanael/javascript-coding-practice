@@ -8,17 +8,35 @@
 <body ng-app="myApp" ng-controller="myCTRL">
 
   <button type="button" ng-click="addCount()">+1</button>
-
   <p>{{ count }}</p>
+
+
+  <button type="button" ng-click="showDIV()">SHOW DIV</button>
+  <button type="button" ng-click="hideDIV()">HIDE DIV</button>
+  <button type="button" ng-click="hideDIV()">{{text_button}}</button>
+  <div ng-show="testingDIV">
+    <h1>Menu:</h1>
+    <div>Item 1</div>
+    <div>Item 2</div>
+    <div>Item 3</div>
+  </div>
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope, $http){
-
     $scope.count = 0;
-
     $scope.addCount = function(){
       $scope.count = $scope.count + 1;
+    }
+
+    $scope.testingDIV = true;
+
+    $scope.showDIV = function(){
+      $scope.testingDIV = true;
+    }
+
+    $scope.hideDIV = function(){
+      $scope.testingDIV = false;
     }
 
   });
