@@ -7,11 +7,23 @@
 </head>
 <body ng-app="myApp" ng-controller="myCTRL">
 
+  <input type="text" ng-model="text_field" ng-change="run()">
+  <p>{{ text_field }}</p>
+  <p>{{ text_Upper }}</p>
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
-  app.controller("myCTRL", function($scope, $http){
+  app.controller("myCTRL", function($scope){
+    /*
+    - The scope is the binding part between the HTML (view) and the JavaScript (controller).
+    - The scope is an object with the available properties and methods.
+    - The scope is available for both the view and the controller.
+    */
+    $scope.text_Upper = '';
 
+    $scope.run = function(){
+      $scope.text_Upper = angular.uppercase($scope.text_field);
+    }
 
   });
   </script>
