@@ -10,6 +10,7 @@
 
   <input type="text" ng-model="addText">
   <button ng-click="addItem()">+ + +</button>
+  <span>{{ alert }}</span>
 
   <ul>
     <li ng-repeat="iten in list">{{ iten }}
@@ -22,10 +23,16 @@
   app.controller("myCTRL", function($scope){
 
     $scope.list = ["Iten 1","Iten 2","Iten 3","Iten 4","Iten 5"];
+    $scope.alert = '';
 
     $scope.addItem = function(){
+      $scope.alert = '';
       if($scope.addText != ''){
-        $scope.list.push($scope.addText);
+        if($scope.list.indexOf($scope.addText) == -1){
+          $scope.list.push($scope.addText);
+        }else{
+          $scope.alert = 'This item is already added!';
+        }
       }
 
       $scope.addText = '';
