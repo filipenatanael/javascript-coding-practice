@@ -6,12 +6,18 @@
   <script type="text/javascript" src="angular.min.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="myCTRL">
+  <h1>Customer List</h1>
 
+  <ul>
+    <li ng-repeat="iten in list">{{ iten }}</li>
+  </ul>
 
   <script type="text/javascript">
   var app = angular.module("myApp",[]);
   app.controller("myCTRL", function($scope){
 
+
+    $scope.list = ["Iten 1","Iten 2","Iten 3","Iten 4","Iten 5"];
 
   });
   </script>
