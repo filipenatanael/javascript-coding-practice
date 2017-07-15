@@ -24,7 +24,11 @@
     $scope.list = ["Iten 1","Iten 2","Iten 3","Iten 4","Iten 5"];
 
     $scope.addItem = function(){
-      $scope.list.push();
+      if($scope.addText != ''){
+        $scope.list.push($scope.addText);
+      }
+
+      $scope.addText = '';
     }
 
 
