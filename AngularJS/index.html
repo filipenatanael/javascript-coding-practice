@@ -14,7 +14,7 @@
 
   <ul>
     <li ng-repeat="iten in list">{{ iten }}
-      <button>- - -</button></br></br>
+      <button ng-click="removerItem($index)">- - -</button></br></br>
     </li>
   </ul>
 
@@ -36,6 +36,12 @@
       }
 
       $scope.addText = '';
+    }
+
+
+    $scope.removerItem = function(item){
+      $scope.alert = '';
+      $scope.list.splice(item, 1);
     }
 
 
