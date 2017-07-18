@@ -104,6 +104,19 @@
                 }
               ]
             };
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+
+            var locations = [
+              ['First Shoppe', -19.9667793, -43.9761253,'http://overwatchclans.net/shared_assets/images/icons/sites/overwatchclans.png'],
+              ['First Shoppe2', -19.9386315, -43.939699,'http://media-overpwn.cursecdn.com/attachments/4/54/0c0000000000a4eb.png'],
+              ['First Shoppe2', -19.9156643, -43.9743293,'http://overwatchclans.net/shared_assets/images/icons/sites/divisionclans.png']
+
+            ];
+
+          
+
+
 
 
           }
