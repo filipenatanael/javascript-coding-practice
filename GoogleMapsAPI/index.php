@@ -17,6 +17,8 @@
 
           <div id="googleMap" style="width:100%;height:800px;" ondblclick="showMap()"></div>
 
+
+
           <script  type="text/javascript">
           function showMap(){
 
@@ -124,21 +126,18 @@
             }
 
 
-
-
-
           }
 
 
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9GvGauHPDIOwomuHOfS7Bgix3RVSK76s&callback=myMap"></script>
 
+
+
         </div>
       </div>
     </div>
   </div>
-
-
 
 </body>
 </html>
