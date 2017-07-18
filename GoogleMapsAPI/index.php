@@ -14,10 +14,8 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="panel panel-default" >
-
+          <h5>Click on screen to show the Google Maps API</h5>
           <div id="googleMap" style="width:100%;height:800px;" ondblclick="showMap()"></div>
-
-
 
           <script  type="text/javascript">
           function showMap(){
