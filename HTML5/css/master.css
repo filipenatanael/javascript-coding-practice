@@ -1,0 +1,15 @@
+body{
+  margin: 1;
+}
+
+nav{
+  height: 100px;
+  background-color: #FFFACD;
+}
+
+footer{
+  height: 50px;
+  background-color: #CCC;
+  text-align: center;
+  padding-top: 10px;
+}
