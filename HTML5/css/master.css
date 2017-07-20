@@ -5,6 +5,8 @@ body{
 nav{
   height: 100px;
   background-color: #FFFACD;
+  border: 3px solid blue;
+  text-align: center;
 }
 
 footer{
