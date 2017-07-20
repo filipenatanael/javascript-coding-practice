@@ -9,6 +9,8 @@ nav{
   text-align: center;
 }
 
+
+
 footer{
   background-color: #CCC;
   border: 3px solid green;
@@ -17,4 +19,18 @@ footer{
 .div_footer{
     text-align: center;
     padding: 10px;
+}
+
+
+
+
+
+.div_body{
+  background-color: #98FB98;
+  border: 3px solid red;
+}
+
+.div_content{
+  text-align: center;
+  padding: 15px;
 }
