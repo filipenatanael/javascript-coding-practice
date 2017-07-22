@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+}
+
+.myClass {
+  width: 700px;
+  height: 400px;
+  background-color: blue;
+}
+
+@media only screen and (max-width:500px){
+
+  .myClass{
+    background-color: black;
+  }
+
+}
