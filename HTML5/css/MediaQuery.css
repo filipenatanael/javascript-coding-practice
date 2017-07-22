@@ -7,11 +7,12 @@ body{
   height: 400px;
   background-color: blue;
 }
-
+/* (orientation:landscape) */
 @media only screen and (max-width:500px){
 
   .myClass{
     background-color: black;
+    width: 350px;
   }
 
 }
