@@ -4,10 +4,3 @@ function sumTwoNumber(){
       var number3 = number1 + number2;
       alert(number3);
     }
-
-/*
-  <input type="text" id="number1">
-  <input type="text" id="number2">
-  </br>
-  <button type="button" onclick="sumTwoNumber()">SUM</button>
-*/
