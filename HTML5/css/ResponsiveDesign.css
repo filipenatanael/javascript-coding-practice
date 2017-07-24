@@ -30,3 +30,20 @@ body{
   margin: auto;
   background-color: #DDD;
 }
+
+@media only screen and (min-width:500px) and (max-width:800px){
+
+     .topo{
+       width: 500px;
+     }
+     .corpo{
+       width: 500px
+     }
+     .rodape{
+       width: 500px;
+     }
+}
+
+@media only screen and (max-width:800px){
+
+}
