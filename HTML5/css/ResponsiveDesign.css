@@ -2,7 +2,8 @@ body{
   margin: 0;
 }
 .topo{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 100px;
   margin: auto;
 }
@@ -19,17 +20,34 @@ body{
   background-color: #DDD;
 }
 .corpo{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 200px;
   margin: auto;
   background-color: #CCC;
 }
 .rodape{
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
   height: 100px;
   margin: auto;
   background-color: #DDD;
 }
+
+@media only screen and (max-width:400px){
+
+   .topo{
+     height: 200px;
+   }
+   .logo{
+     width:100%;
+   }
+   .menu{
+     width:100%;
+   }
+
+}
+
 
 
 /*
