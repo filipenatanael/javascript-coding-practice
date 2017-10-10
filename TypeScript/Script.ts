@@ -1,15 +1,26 @@
-class Student {
-    fullName: string;
-    constructor(public firstName: string, public middleInitial: string, public lastName: string) {
-        this.fullName = firstName + " " + middleInitial + " " + lastName;
-    }
+class Pessoa {
+  nome: string;
+  sobrenome: string;
+  constructor(public nome: string; public sobrenome: string){
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+  }
 }
 
-interface Person {
-    firstName: string;
-    lastName: string;
+class PessoaFisica extends Pessoa{
+   data_nascimento: Date;
+   CPF: string;
+   constructor(public nome: string; public sobrenome: string; public data_nascimento: Date; public CPF: string){
+     super(nome, sobrenome);
+     this.data_nascimento = data_nascimento;
+     this.CPF = CPF;
+   }
 }
 
-function greeter(person : Person) {
-    return "Hello, " + person.firstName + " " + person.lastName;
+class PessoaJuridica extends Pessoa{
+   CNPJ: string;
+   constructor(public nome: string; public sobrenome: string; public CNPJ: string){
+     super(nome, sobrenome);
+     this.CNPJ = CNPJ;
+   }
 }
