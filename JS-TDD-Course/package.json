@@ -1,0 +1,16 @@
+{
+  "name": "js-tdd-course",
+  "version": "1.0.0",
+  "description": "JavaScript course with TDD in practice - Udemy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript",
+    "TDD",
+    "Library"
+  ],
+  "author": "Willians - Rebuild by: Filipe Natanael",
+  "license": "MIT"
+}
