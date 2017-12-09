@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>4 Tagged Template</title>
+</head>
+<style>
+.green {
+  color: green;
+  font-size: 20px;
+}
+</style>
+<body>
+  <script type="text/javascript">
+
+  const name = 'Matthew Murdock';
+  const username = 'Murdock'
+  const email = 'matthew.murdock@marvel.com';
+
+  function toGreen(template, ...values){
+    return template.reduce((accumulator, currentValue, currentIndex) => {
+      return `
+      ${accumulator}
+      <span class="green">${values[currentIndex-1].toUpperCase()}</span>
+      ${currentValue}
+      `
+    });
+  }
+
+  const hero = toGreen`Name: ${name} Username: ${username} Contact: ${email}`;
+
+  document.body.innerHTML = hero;
+
+</script>
+</body>
+</html>
