@@ -15,3 +15,8 @@ console.log(text.startsWith('My', 2));
 console.log(text.endsWith('ing!', 16));
 console.log('test\n'.repeat(3));
 console.log(text.includes('testin'));
+
+
+/* 6.2 - Array.of() */
+const array = Array.of(10, 5, 'John', { username: 'john.brubaker' });
+console.log(array);
