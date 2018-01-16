@@ -8,7 +8,13 @@ console.log(COUNTRY.temp = 'BRASIL');
 console.log(COUNTRY);
 
 /*
-We can get immutable feature with Object by using Object.freeze
+We can get immutable feature with Object by using Object.freeze,
+but const and Object.freeze are two completely different things.
+
+Const applies to bindings ('variables')
+
+Object.freeze applies on values, and more specifically on object values
+and you cannot change its propertieson objects
 */
 
 const USERS = Object.freeze({
