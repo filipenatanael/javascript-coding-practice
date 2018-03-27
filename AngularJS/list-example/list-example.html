@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp" ng-controller="myCTRL">
+  <h1>Customer List</h1>
+
+  <input type="text" ng-model="addText">
+  <button ng-click="addItem()">+ + +</button>
+  <span>{{ alert }}</span>
+
+  <ul>
+    <li ng-repeat="iten in list">{{ iten }}
+      <button ng-click="removerItem($index)">- - -</button></br></br>
+    </li>
+  </ul>
+
+  <script type="text/javascript" src="../angular.min.js"></script>
+  <script type="text/javascript" src="./list-example.js"></script>
+</body>
+</html>
