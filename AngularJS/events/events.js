@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Learning AngularJS</title>
-  <script type="text/javascript" src="angular.min.js"></script>
-</head>
-<body ng-app="myApp" ng-controller="myCTRL">
-
-  <button type="button" ng-click="addCount()">+1</button>
-  <p>{{ count }}</p>
-
-
-  <button type="button" ng-click="showDIV()">SHOW DIV</button>
-  <button type="button" ng-click="hideDIV()">HIDE DIV</button>
-</br></br>
-<button type="button" ng-click="actionDIV()">{{text_button}}</button>
-
-<div ng-show="testingDIV">
-  <h1>Menu:</h1>
-  <div>Item 1</div>
-  <div>Item 2</div>
-  <div>Item 3</div>
-</div>
-
-<script type="text/javascript">
 var app = angular.module("myApp",[]);
 app.controller("myCTRL", function($scope, $http){
-
   $scope.count = 0;
   $scope.addCount = function(){
     $scope.count = $scope.count + 1;
@@ -42,7 +15,6 @@ app.controller("myCTRL", function($scope, $http){
     $scope.testingDIV = false;
   }
   //------------------------------------
-
   $scope.text_button = "SHOW";
 
   $scope.actionDIV = function(){
@@ -53,11 +25,5 @@ app.controller("myCTRL", function($scope, $http){
       $scope.testingDIV = false;
       $scope.text_button = "SHOW!";
     }
-
   }
-
-
 });
-</script>
-</body>
-</html>
