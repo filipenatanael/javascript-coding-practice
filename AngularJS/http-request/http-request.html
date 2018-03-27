@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp" ng-controller="myCTRL">
+  <div>{{ html }}</div>
+
+  <ul>
+    <li ng-repeat="person in people">{{person.name}} is {{person.year}} years old</li>
+  </ul>
+
+  <script type="text/javascript" src="../angular.min.js"></script>
+  <script type="text/javascript" src="./http-request.js"></script>
+</body>
+</html>
