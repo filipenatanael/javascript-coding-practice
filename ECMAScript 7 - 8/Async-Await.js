@@ -16,7 +16,7 @@ async function getMyPosts() {
 
 // ECMAScript 6
 //
-// function getMyIp() {
+// function getMyPosts() {
 //   return fetch('https://jsonplaceholder.typicode.com/posts')
 //   .then(data => data.json())
 //   .then(data => data.map(post => {
@@ -24,4 +24,17 @@ async function getMyPosts() {
 //   }));
 // }
 
-getMyPosts();
+// getMyPosts();
+
+// Async / Await with Multiple Promises
+
+
+async function getUsers(users) {
+  const promises = users.map(user => fetch(`https://api.github.com/users/${user}`)
+  .then(response => response.json()));
+
+  const profiles = await Promise.all(promises);
+  console.log(profiles);
+}
+
+getUsers(['filipenatanael'])
