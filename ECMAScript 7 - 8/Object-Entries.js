@@ -13,4 +13,4 @@ console.log(countriesMap.has('Uruguay'));
 console.log(countriesMap.get('Brazil'));
 
 // Using Object.keys(obj) return [key] only!
-console.log(countriesMap);
+console.log(Object.keys(countriesMap));
