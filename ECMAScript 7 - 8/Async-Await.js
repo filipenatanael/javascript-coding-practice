@@ -1,14 +1,17 @@
 // Async Await Example
 // Simplified code with less chaining and facility to debug
 
-async function getMyIp() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts')
-  const data = await response.json();
+async function getMyPosts() {
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const data = await response.json();
 
-  data.map(post => {
-    console.log(post.title);
-  });
-
+    data.map(post => {
+      console.log(post.title);
+    });
+  } catch (error) {
+    console.log('An error has occurred: ', error);
+  }
 }
 
 // ECMAScript 6
@@ -21,4 +24,4 @@ async function getMyIp() {
 //   }));
 // }
 
-getMyIp();
+getMyPosts();
