@@ -1,4 +1,18 @@
-# JavaScript_Project [Learning]
-This is a repository where some tests are made using Javascript Native and frameworks
+# JavaScript Project Learning
 
-- Javascript TDD
+In this repository are all the codes developed during the learning of Javascript and related frameworks, besides development techniques.
+
+## Subjects
+
+- JavaScript Pure
+- ProgressiveWebApps
+- React-native
+- Vue JS
+- AngularJS
+- ECMAScript 6
+- ECMAScript 7 - 8 Updates
+- JavaScript TDD
+- JQuery
+- TypeScript
+- HTML5 and JavaScript
+- GoogleMapsAPI
