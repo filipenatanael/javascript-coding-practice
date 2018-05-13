@@ -1,3 +1,4 @@
+// STRING PADDING
 // String.prototype.padStart()
 // str.padStart(targetLength [, padString])
 
