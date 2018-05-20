@@ -9,3 +9,11 @@
 - npx webpack
 
 - npx webpack --config webpack.config.js
+
+# Adding the follow line in your packege.json.
+
+- "build": "webpack"
+
+#  Now the npm run build command can be used in place of the npx command.
+
+- npm run build
