@@ -19,4 +19,5 @@ const loveArrowOneLine = ireland.map(name => `I love ${name}!`);
 const loveChain = ireland.filter(name => name === 'Galway')
 .map(name => `I love ${loveArrowOneLine}!`);
 
+
 console.log(loveChain);
