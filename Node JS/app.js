@@ -1,13 +1,4 @@
-var express = require('express'); // Return a function, i can use also require('express')();
-var app = express();
-
-// Set express engine to use EJS
-app.set('view engine', 'ejs');
-
-// res.send similar to res.end
-// app.get('/', function(req, res){
-//   res.send('<b>Home Portal!<b>');
-// });
+var app = require('./config/server');
 
 app.get('/', function(req, res){
   res.render('home/index');
@@ -24,6 +15,10 @@ app.get('/news', function(req, res){
 app.get('/technology', function(req, res){
   res.render('session/technology');
 });
+
+// app.get('/', function(req, res){
+//   res.send('<b>Home Portal!<b>');
+// });
 
 app.listen(3000, function(){
   console.log('Running with express.');
