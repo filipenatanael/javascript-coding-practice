@@ -1,24 +1,8 @@
 var app = require('./config/server');
 
-app.get('/', function(req, res){
-  res.render('home/index');
-});
-
-app.get('/form-add-news', function(req, res){
-  res.render('admin/form-add-news');
-});
-
-app.get('/news', function(req, res){
-  res.render('news/news');
-});
-
-app.get('/technology', function(req, res){
-  res.render('session/technology');
-});
-
-// app.get('/', function(req, res){
-//   res.send('<b>Home Portal!<b>');
-// });
+var home = require('./app/routes/home')(app);
+var admin = require('./app/routes/admin')(app);
+var news = require('./app/routes/news')(app);
 
 app.listen(3000, function(){
   console.log('Running with express.');
