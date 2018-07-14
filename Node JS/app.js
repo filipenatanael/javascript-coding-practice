@@ -1,5 +1,6 @@
 var app = require('./config/server');
 
+// Require Routes
 var home = require('./app/routes/home')(app);
 var admin = require('./app/routes/admin')(app);
 var news = require('./app/routes/news')(app);
