@@ -2,3 +2,6 @@
 
 ### Install:
 - npm install --save-dev lab code
+
+### To Run:
+- npm run test
