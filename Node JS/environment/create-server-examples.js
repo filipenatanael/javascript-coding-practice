@@ -12,7 +12,7 @@ http.createServer(function (req, res){
     res.end("<b>News about science!<b>");
     break;
     default:
-    res.end("<b>Home Portal!<b>")
+    res.end("<b>Home!<b>")
   }
 
 }).listen(3000);
