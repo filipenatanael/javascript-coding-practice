@@ -1,5 +1,22 @@
 module.exports = function(app) {
   app.get('/news', function(req, res){
-    res.render('news/news');
+
+    var mysql = require('mysql');
+
+    var connection = mysql.createConnection({
+      host: 'localhost',
+      user: 'root',
+      password: 'toor',
+      database: 'node_js_pratice'
+    });
+
+    connection.query('select * from news', function(error, result){
+      console.log(result);
+  console.log(error);
+      res.send(result);
+    });
+
+
+    // res.render('news/news');
   });
 };
