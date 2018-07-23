@@ -6,3 +6,5 @@
 - npm install nodemon -g (I'ts not a dependency, but a resource/utility to help on development)
 
 - npm install  mysql --save
+
+- npm install consign --save
