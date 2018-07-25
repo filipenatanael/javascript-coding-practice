@@ -13,7 +13,8 @@ In this repository are all the codes developed during the learning of Javascript
 - **AngularJS**
 - **ECMAScript 6**
 - **ECMAScript 7 - 8 Updates**
-- **JavaScript TDD** *(Lab and Code)*
+- **JavaScript TDD**
+  - (Lab and Code)
 - **JQuery**
 - **TypeScript**
 - **HTML5 and JavaScript**
