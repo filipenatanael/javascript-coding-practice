@@ -4,16 +4,16 @@ In this repository are all the codes developed during the learning of Javascript
 
 ## Subjects
 
-- JavaScript Pure
-- Node JS (Express, EJS, Consign[autoload], MySql, Nodemon)
-- ProgressiveWebApps
-- React-native
-- Vue JS
-- AngularJS
-- ECMAScript 6
-- ECMAScript 7 - 8 Updates
-- JavaScript TDD
-- JQuery
-- TypeScript
-- HTML5 and JavaScript
-- GoogleMapsAPI
+- **JavaScript Pure**
+- **Node** *JS (Express, EJS, Consign[autoload], MySql, Nodemon)*
+- **ProgressiveWebApps**
+- **React-native**
+- **Vue JS**
+- **AngularJS**
+- **ECMAScript 6**
+- **ECMAScript 7 - 8 Updates**
+- **JavaScript TDD** *(Lab and Code)*
+- **JQuery**
+- **TypeScript**
+- **HTML5 and JavaScript**
+- **GoogleMapsAPI**
