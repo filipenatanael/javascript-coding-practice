@@ -9,7 +9,7 @@ module.exports = function(app) {
 
   app.post('/news/store', function(req, res){
     let news = req.body;
-    res.send('Chegou aqui....');
+    res.send(news);
   });
 
 }

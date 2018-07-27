@@ -1,5 +1,6 @@
 var express = require('express');
 var consign = require('consign');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -11,6 +12,9 @@ const DATABASE_CONFIG = 'config/database.js';
 
 app.set('view engine', 'ejs');  // Set express engine to use EJS
 app.set('views', VIEWS_DIRECTORY) // Set default directory to express
+
+/* Works like a Middleware */
+app.use(bodyParser.urlencoded({ extended: true }));
 
 consign()
     .include(ROUTES_DIRECTORY)
