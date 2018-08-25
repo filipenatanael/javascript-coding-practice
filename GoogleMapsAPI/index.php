@@ -6,10 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <title>Google maps API</title>
-
 </head>
 <body>
-
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -19,7 +17,6 @@
 
           <script  type="text/javascript">
           function showMap(){
-
             var mapProp= {
               center:new google.maps.LatLng(-19.9667793, -43.9761253),
               zoom:10,
@@ -106,7 +103,6 @@
             };
             var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-
             var locations = [
               ['First Shoppe', -19.9667793, -43.9761253,'https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2/128/social-circle-google-plus-2-128.png'],
               ['First Shoppe2', -19.9386315, -43.939699,'https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2/128/social-circle-google-plus-2-128.png'],
@@ -122,20 +118,14 @@
                 icon: locations[i][3]
               });
             }
-
-
           }
-
 
           </script>
           <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9GvGauHPDIOwomuHOfS7Bgix3RVSK76s&callback=myMap"></script>
-
-
 
         </div>
       </div>
     </div>
   </div>
-
 </body>
 </html>

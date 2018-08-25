@@ -4,7 +4,7 @@
   "description": "JavaScript course with TDD in practice - Udemy",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "lab"
   },
   "keywords": [
     "JavaScript",
@@ -14,8 +14,10 @@
   "author": "Willians - Rebuild by: Filipe Natanael",
   "license": "MIT",
   "devDependencies": {
+    "code": "^5.2.0",
     "eslint": "^4.12.1",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "lab": "^15.5.0"
   }
 }

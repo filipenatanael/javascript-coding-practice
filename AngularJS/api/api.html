@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+</head>
+<body ng-app="myApp" ng-controller="myCTRL">
+  <input type="text" ng-model="text_field" ng-change="run()">
+  <p>{{ text_field }}</p>
+  <p>{{ text_Upper }}</p>
+  <p>isString and isNumber</p>
+  <p>{{ result }}</p>
+ <script type="text/javascript" src="../angular.min.js"></script>
+ <script type="text/javascript" src="./api.js"></script>
+</body>
+</html>

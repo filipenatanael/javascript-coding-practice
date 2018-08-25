@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCTRL">
+    <h1>List People</h1>
+    <select ng-model="orderinigFor" ng-options="x.name for x in options_array">
+    </select>
+    <table border="0" width="500">
+      <tr>
+        <th align="left" ng-repeat="opt in options_array">{{opt.name | uppercase}}</th>
+      </tr>
+      <tr ng-repeat="person in people | orderBy:orderinigFor.v_value">
+        <td>{{person.name}}</td>
+        <td>{{person.country}}</td>
+      </tr>
+    </table>
+  </div>
+  <script type="text/javascript" src="../angular.min.js"></script>
+  <script type="text/javascript" src="./order-list-by-select.js"></script>
+</script>
+</body>
+</html>

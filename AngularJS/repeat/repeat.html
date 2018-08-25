@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCTRL">
+    <ul>
+      <li ng-repeat="ingredient in ingredients">
+        {{ ingredient }}
+      </li>
+    </ul>
+    <!----------------------------------------------------------------->
+  </br>
+  <ul>
+    <li ng-repeat="player in players">
+      {{player.nome}} is {{player.character}}
+    </li>
+  </ul>
+</div>
+<script type="text/javascript" src="../angular.min.js"></script>
+<script type="text/javascript" src="./repeat.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Learning AngularJS</title>
+  <script type="text/javascript" src="../angular.min.js"></script>
+</head>
+<body ng-app="myApp" ng-controller="myCTRL">
+  <p ng-show="showPhrase">BAR OPEN</p>
+  <p ng-show="hours > 25">{{hours}}</p>
+  <!-- <p ng-show="false">This is a second text!</p> -->
+  <script type="text/javascript">
+    var app = angular.module("myApp",[]);
+      app.controller("myCTRL", function($scope, $http){
+        $scope.showPhrase = true;
+        $scope.hours = 100;
+    });
+  </script>
+</body>
+</html>
