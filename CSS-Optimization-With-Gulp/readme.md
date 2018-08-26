@@ -3,3 +3,10 @@
 - npm install -g gulp
 - npm install --save-dev gulp
 - npm install --save-dev gulp-minify-css
+
+
+### CSSMinifier
+
+- Functions:
+  - gulp minifyCss
+  - gulp monitoringChanges
