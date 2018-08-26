@@ -10,4 +10,8 @@ Gulp.task("default", function() {
 
 Gulp.task("minifyCss", function() {
   Gulp.src(CSS_DIRECTORY).pipe(GulpMinifyCss()).pipe(Gulp.dest(DIST_CSS));
-})
+});
+
+Gulp.task("monitoringChanges", function() {
+  Gulp.watch(CSS_DIRECTORY, ["minifyCss"]);
+});
