@@ -35,4 +35,4 @@ Simply change every dependency's version to *, then **run npm update --save**
 To see which modules are outdated, just run npm outdated. It will list any installed dependencies that have newer versions available.
 
 ## References
-(How do I update each dependency in package.json to the latest version?)[https://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-package-json-to-the-latest-version]
+[How do I update each dependency in package.json to the latest version?](https://stackoverflow.com/questions/16073603/how-do-i-update-each-dependency-in-package-json-to-the-latest-version)
