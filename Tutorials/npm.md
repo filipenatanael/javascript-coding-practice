@@ -1,5 +1,7 @@
 ## How do I update each dependency in package.json to the latest version?
 
+**npm-check-updates** is a utility that automatically adjusts a package.json with the latest version of all dependencies:
+
 - npm i -g npm-check-updates
 - ncu -u
 - npm install
