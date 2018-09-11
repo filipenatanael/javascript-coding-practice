@@ -4,7 +4,7 @@ In this repository are all the codes developed during the learning of Javascript
 
 ## Subjects
 
-- **JavaScript Pure**
+- **JavaScript**
 - **Node JS**
   - (Express, EJS, Consign[autoload], MySql, Nodemon)
 - **ProgressiveWebApps**
