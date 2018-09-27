@@ -20,3 +20,4 @@ In this repository are all the codes developed during the learning of Javascript
 - **HTML5 and JavaScript**
 - **GoogleMapsAPI**
 - **CSS Optimization With Gulp**
+- **Essential JavaScript Questions**
