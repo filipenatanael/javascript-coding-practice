@@ -1,6 +1,4 @@
-/**
- * Get the raw type string of a value e.g. [object Object]
- */
+// Get the raw type string of a value: [object Object]
 var _toString = Object.prototype.toString;
 
 function toRawType (value) {
@@ -8,13 +6,12 @@ function toRawType (value) {
 }
 
 /**
- * Strict object type check. Only returns true
- * for plain JavaScript objects.
+ * Strict object type check. Only returns true for plain JavaScript objects:
  */
-function isPlainObject (obj) {
-  return _toString.call(obj) === '[object Object]'
+function isPlainObject (object) {
+  return _toString.call(object) === '[object Object]'
 }
 
-function isRegExp (v) {
-  return _toString.call(v) === '[object RegExp]'
+function isRegExp (value) {
+  return _toString.call(value) === '[object RegExp]'
 }
