@@ -12,7 +12,7 @@ var Person = function(pName) {
 }
 
 var person = new Person('John Wick');
-
 console.log(person.getName());
+
 person.setName('Luke Skywalker');
 console.log(person.getName());
