@@ -7,6 +7,8 @@
 
 ### CSSMinifier
 
+*gulpfile.js configuration*
+
 - Functions:
   - gulp minifyCss
   - gulp monitoringChanges
