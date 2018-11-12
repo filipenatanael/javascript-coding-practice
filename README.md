@@ -6,13 +6,11 @@ In this repository are all the codes developed during the learning of Javascript
 
 - **JavaScript**
 - **Node JS**
+- **Redux**
   - (Express, EJS, Consign[autoload], MySql, Nodemon)
-- **ProgressiveWebApps**
-- **React-native**
 - **Vue JS**
 - **AngularJS**
-- **ECMAScript 6**
-- **ECMAScript 7 - 8 Updates**
+- **ECMAScript 6/7/8**
 - **JavaScript TDD**
   - (Lab and Code)
 - **JQuery**
@@ -20,4 +18,3 @@ In this repository are all the codes developed during the learning of Javascript
 - **HTML5 and JavaScript**
 - **GoogleMapsAPI**
 - **CSS Optimization With Gulp**
-- **Essential JavaScript Questions**

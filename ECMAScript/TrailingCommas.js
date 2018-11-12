@@ -1,5 +1,5 @@
-// Trailing Commas
-//
+/* Trailing Commas */
+
 // Arrays
 var arr = [
   1,
