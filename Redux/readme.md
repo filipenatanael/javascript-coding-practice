@@ -1,49 +1,15 @@
 # Redux
 
-### CreateStore
-```JavaScript
-function createStore (reducer) {
+- Concepts
+- UI + State
+- This is redux
 
-  let state
-  let listeners = []
+## Live Server
+npm install -g live-server
 
-  const getState = () => state
+## Running
+cd Redux
+live-server this-is-redux
 
-  const subscribe = (listener) => {
-    listeners.push(listener)
-    // Way to unsubscribe
-    return () => {
-      listeners = listeners.filter((l) => l !== listener)
-    }
-  }
-
-  const dispatch = (action) => {
-    console.log('dispatch was called.', action);
-    state = reducer(state, action)
-    listeners.forEach((listener) => listener())
-  }
-
-  return {
-    getState,
-    subscribe,
-    dispatch,
-  }
-}
-```
-
-### Reducer
-```JavaScript
-function todos (state = [], action) {
-  switch(action.type) {
-    case ADD_TODO :
-      return state.concat([action.todo])
-    case REMOVE_TODO :
-      return state.filter((todo) => todo.id !== action.id)
-    case TOGGLE_TODO :
-      return state.map((todo) => todo.id !== action.id ? todo :
-      Object.assign({}, todo, { complete: !todo.complete }))
-    default :
-      return state
-  }
-}
-```
+## References:
+[Live Server](https://www.npmjs.com/package/live-server)
