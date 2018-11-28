@@ -2,38 +2,38 @@ function generateId () {
   return Math.random().toString(36).substring(2) + (new Date()).getTime().toString(36);
 }
 
-// Library Code
-function createStore (reducer) {
-  // The store should have four parts
-  // 1. The state
-  // 2. Get the state.
-  // 3. Listen to changes on the state.
-  // 4. Update the state
-  let state
-  let listeners = []
-
-  const getState = () => state
-
-  const subscribe = (listener) => {
-    listeners.push(listener)
-    // Way to unsubscribe
-    return () => {
-      listeners = listeners.filter((l) => l !== listener)
-    }
-  }
-
-  const dispatch = (action) => {
-    console.log('dispatch was called.', action);
-    state = reducer(state, action)
-    listeners.forEach((listener) => listener())
-  }
-
-  return {
-    getState,
-    subscribe,
-    dispatch,
-  }
-}
+// // Library Code
+// function createStore (reducer) {
+//   // The store should have four parts
+//   // 1. The state
+//   // 2. Get the state.
+//   // 3. Listen to changes on the state.
+//   // 4. Update the state
+//   let state
+//   let listeners = []
+//
+//   const getState = () => state
+//
+//   const subscribe = (listener) => {
+//     listeners.push(listener)
+//     // Way to unsubscribe
+//     return () => {
+//       listeners = listeners.filter((l) => l !== listener)
+//     }
+//   }
+//
+//   const dispatch = (action) => {
+//     console.log('dispatch was called.', action);
+//     state = reducer(state, action)
+//     listeners.forEach((listener) => listener())
+//   }
+//
+//   return {
+//     getState,
+//     subscribe,
+//     dispatch,
+//   }
+// }
 
 // App Code
 const ADD_TODO = 'ADD_TODO'
@@ -103,15 +103,21 @@ function goals (state = [], action) {
 }
 
 // Combine Reducers
-function app (state = {}, action) {
-  return {
-    todos: todos(state.todos, action),
-    goals: goals(state.goals, action),
-  }
-}
-
+// function app(state = {}, action) {
+//   return {
+//     todos: todos(state.todos, action),
+//     goals: goals(state.goals, action),
+//   }
+// }
+//
 // Store
-const store = createStore(app)
+// const store = createStore(app)
+
+// Using Library via Content Delivery Network
+const store = Redux.createStore(Redux.combineReducers({
+  todos,
+  goals,
+}))
 
 // Subscribe
 store.subscribe(() => {
