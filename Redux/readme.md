@@ -8,9 +8,8 @@
 npm install -g live-server
 
 ## Running
-cd ./this-is-redux
-live-server index.html
-
+cd Redux
+live-server this-is-redux
 
 ## References:
 [Live Server](https://www.npmjs.com/package/live-server)
