@@ -20,7 +20,7 @@
 
 ## Source Map
 
-```.json
+```javascript
 module.exports = {
   devtool: 'source-map',
   optimization: {
