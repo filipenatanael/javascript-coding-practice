@@ -10,3 +10,13 @@
 - npm install consign --save
 
 - npm install body-parser --save
+
+
+### Running
+```shell
+cd /Node JS
+nodemon app
+
+node app
+http://http://127.0.0.1:3000/
+```
