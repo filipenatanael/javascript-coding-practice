@@ -8,7 +8,7 @@ var app = express();
 const VIEWS_DIRECTORY = 'src/views';
 const ROUTES_DIRECTORY = 'src/routes';
 const MODALS_DIRECTORY = 'src/models';
-const DATABASE_CONFIG = 'database/createConnection.js';
+const DATABASE_CONFIG = 'database/getConnection.js';
 
 /* <%= EJS %> is a visualization engine, with it we can easily and simply transport data from the backend to the front end,
 we basically managed to use javascript codes in the html of our pages. */
