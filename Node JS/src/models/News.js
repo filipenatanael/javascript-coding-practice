@@ -1,17 +1,20 @@
 class News {
+  constructor(connection) {
+    this.connection = connection;
+  }
   /* Get a all news available */
-  getAll(connection, callback) {
-    connection.query('select * from news', callback)
+  getAll(callback) {
+    this.connection.query('select * from news', callback)
   }
 
   /* Get a specific news available */
-  getSpecific(connection, callback) {
-    connection.query('select * from news where id_news = 3', callback)
+  getSpecific(callback) {
+    this.connection.query('select * from news where id_news = 3', callback)
   }
 
   /* Save a news on database */
-  save(news, connection, callback){
-    connection.query('insert into news set ?', news, callback)
+  save(news, callback){
+    this.connection.query('insert into news set ?', news, callback)
   }
 }
 
@@ -22,7 +25,9 @@ module.exports = function() {
 // -----------------------------------------------------------------
 // Classes based on traditional function
 //
-// function News() { }
+// function News(connection) {
+//    this.connection = connection;
+// }
 //
 // News.prototype.getAll(connection, callback) {
 //   connection.query('select * from news', callback)
