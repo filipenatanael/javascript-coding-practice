@@ -1,6 +1,7 @@
-var express = require('express');
-var consign = require('consign');
-var bodyParser = require('body-parser');
+const express = require('express');
+const consign = require('consign');
+const bodyParser = require('body-parser');
+const expressValidator = require('express-validator');
 
 var app = express();
 
@@ -18,6 +19,7 @@ app.set('views', VIEWS_DIRECTORY) // Set default directory to express
 
 /* Works like a Middleware */
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(expressValidator());
 
 
 /* Consign makes applications easier to develop with logical file separation and automatic script loading.

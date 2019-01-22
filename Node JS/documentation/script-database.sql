@@ -11,3 +11,8 @@ create table news(
 
 /* Create registres */
 insert into news(title, content) values('What is Climate Change?','Climate change, also called global warming...');
+
+/* Alter table */
+alter table news add column summary varchar(100);
+alter table news add column author varchar(30);
+alter table news add published date;

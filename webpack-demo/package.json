@@ -1,5 +1,6 @@
 {
   "name": "webpack-demo",
+  "author": "Filipe Natanael <filipenatanael@live.com>",
   "version": "1.0.0",
   "description": "",
   "private": true,
