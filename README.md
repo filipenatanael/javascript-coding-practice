@@ -8,17 +8,35 @@ In this repository are all the codes developed during the learning of Javascript
 
 ## Subjects
 
-- **JavaScript**
-- **Node JS**
-- **Redux**
-  - (Express, EJS, Consign[autoload], MySql, Nodemon)
-- **Vue JS**
-- **AngularJS**
-- **ECMAScript 6/7/8**
-- **JavaScript TDD**
-  - (Lab and Code)
-- **JQuery**
-- **TypeScript**
-- **HTML5 and JavaScript**
-- **GoogleMapsAPI**
-- **CSS Optimization With Gulp**
+- JavaScript General
+  - advanced-concepts
+  - web-components
+  - utils-functions
+- AdonisJS
+  - rocket-social-api
+- AngularJS(functionalities)
+- ECMAScript(updating 6/7/8)
+- Node JS
+  - Express
+  - EJS
+  - Consign[autoload]
+  - MySql
+  - Nodemon
+  - Express validation
+- Redux
+  - concepts 
+  - architecture
+  - create your onw redux
+  - ui-state
+- Vue JS
+- JavaScript TDD
+  - Lab 
+  - Code.js
+- webpack-demo
+- Tutorials
+- Archived Material 
+  - JQuery
+  - TypeScript
+  - HTML5 and JavaScript
+  - GoogleMapsAPI
+  - CSS Optimization With Gulp
