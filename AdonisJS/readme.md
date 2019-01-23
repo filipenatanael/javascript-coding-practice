@@ -15,6 +15,9 @@ adonis migration:run --force
 # Create model & migrations & initial crud
 adonis make:model Post -m -c
 
+# Route list
+adonis route:list
+
 ```
 
 [Database](https://adonisjs.com/docs/4.0/database-basics)
