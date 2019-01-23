@@ -3,9 +3,17 @@
 ```shell
 adonis new rocket-social-api --api-only
 
+# Create appKey
+adonis key:generate --force
+
+adonis serve --dev
+
 adonis install sqlite3
 
 adonis migration:run --force
+
+# Create model & migrations & initial crud
+adonis make:model Post -m -c
 
 ```
 

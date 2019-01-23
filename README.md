@@ -1,6 +1,10 @@
-# JavaScript Project Learning
+<p align="center"><a href="" target="_blank" rel="noopener noreferrer"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="My Reads"></a></p>
 
+<h1 align="center">JavaScript Project Learning</h1>
+
+<p align="center">
 In this repository are all the codes developed during the learning of Javascript and related frameworks, besides development techniques.
+</p>
 
 ## Subjects
 
