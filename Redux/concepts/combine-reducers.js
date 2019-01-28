@@ -69,6 +69,11 @@ store.subscribe(() => {
   console.log('The new state is: ', store.getState())
 })
 
+// UnSubscribe
+// const UnSubscribe = store.subscribe(() => {
+//   console.log('The store changed.');
+// })
+
 store.dispatch({
   type: 'ADD_TODO',
   todo: {
