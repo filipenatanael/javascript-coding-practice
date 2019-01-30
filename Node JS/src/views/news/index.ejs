@@ -3,80 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>News</title>
-  <style rel="stylesheet" type="text/css">
-  h1 {
-    font-family: sans-serif;
-    color: #2e2e2e;
-  }
-  body {
-    margin: 10px;
-    padding: 0;
-  }
-  .container {
-    padding: 25px;
-  }
-  .row {
-    margin-top: 50px;
-  }
-  input {
-    padding: 10px;
-    width: 250px;
-    margin-top: 10px;
-  }
-  input[type=submit] {
-    background-color: #428bca;
-    border: 0;
-    font-size: 18px;
-    color: white;
-  }
-  input[type=submit]:hover {
-    background-color: #28a745;
-  }
-  textarea {
-    margin-top: 10px;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  table, th, td {
-    border: 1px solid #4d4d4d;
-  }
-  table tr:nth-child(even){
-    background-color: #f2f2f2;
-  }
-  tr:hover {
-    background-color: #f2f2f2;
-  }
-  th {
-    height: 50px;
-    background-color: #c3f77d;
-    text-align: center;
-
-  }
-  td {
-    height: 30px;
-    text-align: center;
-  }
-  ul li {
-    max-width: 500px;
-    background-color: #fff3cd;
-    border-color: #ffeeba;
-    list-style-type: none;
-  }
-  li {
-    margin: 10px;
-    padding: 15px;
-    font-family: sans-serif;
-    font-weight: bold;
-    color: #2e2e2e;
-  }
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/images/favicon.ico" />
 </head>
 <body>
   <div class="container">
     <h1>NEWS</h1>
 
+    <!-- EJS - Embedded JavaScript Templates -->
     <% if(typeof validation !== "undefined") {%>
       <ul>
         <% for(var i=0; i < validation.length; i++){ %>
@@ -88,16 +22,16 @@
       <div class="row">
         <form action="/news/store" method="post">
           <!-- <label for="title">Title</label> -->
-          <input type="text" name="title" id="title" placeholder="News title">
+          <input type="text" name="title" id="title" value="<%=news.title%>" placeholder="News title">
           <br/>
-          <input type="text" name="summary" id="summary" placeholder="News summary">
+          <input type="text" name="summary" id="summary" value="<%=news.summary%>" placeholder="News summary">
           <br/>
-          <input type="text" name="author" id="author" placeholder="News author">
+          <input type="text" name="author" id="author" value="<%=news.author%>" placeholder="News author">
           <br/>
-          <input type="date" name="published" id="published">
+          <input type="date" name="published" id="published" value="<%=news.published%>">
           <br/>
           <!-- <label for="content">content</label> -->
-          <textarea id="content" name="content" placeholder="Content..." rows="8" cols="80"></textarea>
+          <textarea name="content" id="content" value="<%=news.content%>" placeholder="Content..." rows="8" cols="80"></textarea>
           <br/>
           <input type="submit" value="Seed">
         </form>
