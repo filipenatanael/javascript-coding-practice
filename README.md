@@ -12,6 +12,7 @@ In this repository are all the codes developed during the learning of Javascript
   - advanced-concepts
   - web-components
   - utils-functions
+    - algorithms
 - Redux
   - concepts
   - architecture
