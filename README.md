@@ -12,6 +12,12 @@ In this repository are all the codes developed during the learning of Javascript
   - advanced-concepts
   - web-components
   - utils-functions
+    - algorithms
+- Redux
+  - concepts
+  - architecture
+  - create your own redux
+  - ui-state
 - AdonisJS
   - rocket-social-api
 - AngularJS(functionalities)
@@ -23,18 +29,13 @@ In this repository are all the codes developed during the learning of Javascript
   - MySql
   - Nodemon
   - Express validation
-- Redux
-  - concepts 
-  - architecture
-  - create your onw redux
-  - ui-state
 - Vue JS
 - JavaScript TDD
-  - Lab 
+  - Lab
   - Code.js
 - webpack-demo
 - Tutorials
-- Archived Material 
+- Archived Material
   - JQuery
   - TypeScript
   - HTML5 and JavaScript

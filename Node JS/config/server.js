@@ -9,6 +9,8 @@ var app = express();
 const VIEWS_DIRECTORY = 'src/views';
 const ROUTES_DIRECTORY = 'src/routes';
 const MODALS_DIRECTORY = 'src/models';
+const CONTROLLERS_DIRECTORY = 'src/controllers';
+const STATIC_DIRECTORY = 'src/public';
 const DATABASE_CONFIG = 'database/getConnection.js';
 
 /* <%= EJS %> is a visualization engine, with it we can easily and simply transport data from the backend to the front end,
@@ -18,16 +20,18 @@ app.set('view engine', 'ejs');  // Set express engine to use EJS
 app.set('views', VIEWS_DIRECTORY) // Set default directory to express
 
 /* Works like a Middleware */
+app.use(express.static(STATIC_DIRECTORY));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 
-
+console.log(app);
 /* Consign makes applications easier to develop with logical file separation and automatic script loading.
 Consign can be used to autoload models, routes, schemas, configs, controllers, object maps... etc... */
 consign()
     .include(ROUTES_DIRECTORY)
     .then(DATABASE_CONFIG)
     .then(MODALS_DIRECTORY)
+    .then(CONTROLLERS_DIRECTORY)
     .into(app);
 
 module.exports = app;

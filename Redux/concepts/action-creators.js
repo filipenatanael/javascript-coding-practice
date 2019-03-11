@@ -110,6 +110,11 @@ store.subscribe(() => {
   console.log('The new state is: ', store.getState())
 })
 
+// UnSubscribe
+// const UnSubscribe = store.subscribe(() => {
+//   console.log('The store changed.');
+// })
+
 store.dispatch(addTodoAction({
   id: 0,
   name: 'Walk the dog',

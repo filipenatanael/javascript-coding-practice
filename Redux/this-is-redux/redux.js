@@ -193,6 +193,7 @@ function addTodoToDOM (todo) {
 
   document.getElementById('todos').appendChild(node)
 }
+
 function addGoalToDOM (goal) {
   const node = document.createElement('li')
   const text = document.createTextNode(goal.name)
