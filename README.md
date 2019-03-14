@@ -23,12 +23,14 @@ In this repository are all the codes developed during the learning of Javascript
 - AngularJS(functionalities)
 - ECMAScript(updating 6/7/8)
 - Node JS
-  - Express
-  - EJS
-  - Consign[autoload]
-  - MySql
-  - Nodemon
-  - Express validation
+  - nodejs-express-consign-mysql
+    - Express
+    - EJS
+    - Consign[autoload]
+    - MySql
+    - Nodemon
+    - Express validation
+  - nodejs-babel-es6-async-await
 - Vue JS
 - JavaScript TDD
   - Lab
